@@ -1,0 +1,19 @@
+/* Global style */
+:root{
+  --main_color:#6574f7;
+  --bg_color: #F5F5F5;
+  --main_text_color:#4F4F4F;
+  --white:#fff;
+  --footer_color:#0C1E49;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F5F5;
+   
+}

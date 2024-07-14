@@ -1,0 +1,252 @@
+
+
+
+  .hero{
+    height: 840px;
+    display: block;
+    background-image: url(../assets/home/img1.jpg);
+    background-size:contain;  
+    background-repeat: no-repeat;
+    z-index: -2;
+    position: relative;
+  }
+
+  
+  .hero::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg_color);
+    z-index: -1;
+    clip-path: polygon(75% 0, 100% 0, 100% 100%, 39% 100%);
+  }
+  .logo{
+    max-height: 78px;
+    max-width: 449px;
+  }
+
+
+  .hero h1{
+  color:var(--main_text_color);
+  font-size: 96px;
+  font-weight: 100;
+  }
+  .hero p:first-of-type{
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    margin-top: 0px;
+    color: var(--main_text_color);
+    line-height: 15px;
+  }
+  .hero p:nth-child(2) {
+    font-size: 16px;
+  }
+  .btn.experts{
+    background-color: #6574f7;
+    color: var(--white);
+    border-radius: 20px;
+    margin-top: 125px;
+  }
+  .btn-help{
+    background-color: #5180F6;
+    color: var(--white);
+    font-weight:700 ;
+    font-size: 24px;
+  }
+
+  @media (max-width:1200px){
+    .hero{
+      max-height: 100vh;
+      background-color: var(--bg_color);
+      display: block;
+      background-image: none;
+    }
+    .logo img{
+      margin-top: 50px;
+      max-height: 78px;
+      max-width: 300px;
+    }
+  .hero p:first-of-type{
+    font-size: 64px;
+  }
+
+  }
+
+// -------- Header Section --------------
+  
+// -------- About Section ---------------  
+  .about{
+  background-image:linear-gradient(#6d91ee77,#6d91ee77) ,url(../assets/about/img2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 840px;
+  position: relative;
+  width: 100%;
+    overflow: hidden;
+    z-index: -2;
+  
+  }
+  .about::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#6D91EE;
+    z-index: -1;
+    clip-path: polygon(75% 0, 100% 0, 100% 100%, 39% 100%);
+  }
+  .about img{
+    border-radius: 20px;
+    max-width: 419px;
+    max-height: 282px;
+  }
+  .about .img{
+    width: 100%;
+    height: 100%;
+  }
+  .about-title{
+    font-weight: 900;
+    font-size: 64px;
+    color: var(--white) ;
+  }
+
+  .about p{
+  font-weight: 100;
+  font-size: 18px;
+  color:var(--white) ;
+  }
+  .about-right{
+    margin-top: 150px;
+  }
+  
+
+
+     @media (max-width:1200px){
+
+      .about{
+        background-image: none;
+        background-color: #6D91EE;
+        height: 100vh;
+      }
+  
+      .about .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+      }
+      .about-left .about-right{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        margin: 0;
+      }
+      .about img{
+        display: none;
+      }
+      .about h2{
+        font-size: 40px;
+      }
+  
+    }
+// -------- About Section ---------------  
+
+// -------- Services Section ---------------  
+  .services h2{
+    color: #6D91EE;
+    font-weight: 900;
+  
+  }
+  
+  .card-img-top{
+  width: 385px;
+  height: 290px;
+  width: 100%;
+  border-radius:30px 30px 0px 0px;
+  border-top-color:var(--white) ;
+  }
+  .card-text{
+    color: #324473;
+  }
+  .card .card-title{
+    color: #324473;
+    font-weight: 900;
+  }
+
+  // -------- Services Section ---------------  
+
+  // -------- Testymonials Section ---------------  
+
+  .testymonials-card{
+  border-radius: 40px;
+  border: 1px solid #6D91EE;
+   flex-basis: calc(50% - 20px); 
+   margin-right: 20px; 
+  }
+  
+  @media (max-width: 767px) {
+    .row {
+      flex-wrap: wrap; 
+    }
+  
+    .testymonials-card {
+      flex-basis: 100%; 
+      margin-bottom: 20px; 
+    }
+  }
+  
+  
+  .testymonials h2{
+    color: #6D91EE;
+    font-weight: 900;
+    box-sizing: border-box;
+  }
+  .testymonials img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .testymonials h4{
+    color: #6D91EE;
+    font-weight: 700;
+  }
+  .testymonials-card i{
+   color: #6D91EE;
+  }
+  
+  // -------- Testymonials Section ---------------  
+
+  // -------- Contact Us Section ---------------  
+  .form-input input{
+    background-color: #CEDCFF;
+  }
+  .contact h2{
+    color: #6D91EE;
+    font-weight: 900;
+    box-sizing: border-box;
+  }
+  .form-input button{
+  background-color: var(--white) ;
+  border: solid #5180F6;
+  }
+  .form-contact i{
+    color: #5180F6;
+  }
+  // -------- Contact Us Section ---------------  
+
+  // -------- footer Section ---------------  
+  footer{
+    width: 100%;
+    height: 145px;
+    background-color: var(--footer_color);
+  }
+  
